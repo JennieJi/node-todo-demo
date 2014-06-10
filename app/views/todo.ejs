@@ -1,0 +1,35 @@
+<% include global/header %>
+
+<style>
+	form {display: inline;}
+</style>
+
+<div class="page">
+	<div>
+		<form method="post" action="/add">
+			<input type="text" name="subject" id="subject" />
+			<input type="submit" value="Add" />
+		</form>
+	</div>
+	<ul>
+		<% todos.forEach(function(todo) { %>
+	   	<li>
+	   		<% if(todo.done){ %>
+	   		<del><%= todo.subject %></del>
+	   		<% } else { %>
+	   		<span><%= todo.subject %></span>
+	   		<form method="post" action="/done">
+	   			<input type="hidden" name="id" value="<%= todo._id%>">
+		   		<input type="submit" name="done" value="Done" />
+		   	</form>
+	   		<form method="post" action="/remove">
+	   			<input type="hidden" name="id" value="<%= todo._id%>">
+		   		<input type="submit" name="remove" value="Remove" />
+		   	</form>
+	   		<% } %>
+	   	</li>
+		<% }); %>
+	</ul>
+</div>
+
+<% include global/footer %>
