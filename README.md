@@ -3,6 +3,25 @@ node-todo-demo
 
 A very simple MVC todo demo created by Node.js ( express + ejs + mongoose )
 
+Getting Started
+==============
+1. Make sure you have installed node.js, npm and mongoDB;
+2. Clone this repository;
+3. Install node modules:    
+   ```sh
+   cd node-todo-demo/
+   npm install
+   ```
+3. Run mongoDB:    
+   ```sh
+   mongod
+   ```
+4. Run the app:    
+   ```sh
+   node todo.js
+   ```
+5. Visit the app by [http://localhost:3000](http://localhost:3000)
+
 
 License
 ==============
