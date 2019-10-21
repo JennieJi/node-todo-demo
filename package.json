@@ -15,7 +15,7 @@
   "repository": "git://github.com/JennieJi/jslab-jennie.git",
   "dependencies": {
     "express": "3.5.x",
-    "ejs": "1.0.x",
+    "ejs": "2.7.x",
     "mongoose": "3.8.x"
   },
   "devDependencies": {
