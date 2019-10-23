@@ -16,7 +16,7 @@
   "dependencies": {
     "express": "3.5.x",
     "ejs": "1.0.x",
-    "mongoose": "3.8.x"
+    "mongoose": "5.7.x"
   },
   "devDependencies": {
     "nodemon": "latest",
